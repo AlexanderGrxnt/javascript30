@@ -12,6 +12,20 @@
         <div class="hand hour-hand"></div>
         <div class="hand min-hand"></div>
         <div class="hand second-hand"></div>
+        <div class="hour-marks">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
     </div>
 
@@ -57,11 +71,12 @@
     }
 
     .hand {
-      width: 50%;
+      width: 48%;
       height: 6px;
       background: rgba(0, 0, 0, 0.651);
       position: absolute;
       top: 50%;
+      left: 2%;
       transform-origin: 100%;
       transform: rotate(90deg);
       transition: all 0.05s;
@@ -77,6 +92,62 @@
     .min-hand{
       background: white;
     }
+
+    .hour-marks > span{
+      width: 10%;
+      height: 10px;
+      background: rgba(255, 255, 255, 0.733);
+      position: absolute;
+      top: 50%;
+      left: -10%;
+      transform-origin: 600%;
+    }
+
+    .hour-marks > span:nth-child(2){
+      transform: rotate(30deg);
+    }
+
+    .hour-marks > span:nth-child(3){
+      transform: rotate(60deg);
+    }
+
+    .hour-marks > span:nth-child(4){
+      transform: rotate(90deg);
+    }
+
+    .hour-marks > span:nth-child(5){
+      transform: rotate(120deg);
+    }
+
+    .hour-marks > span:nth-child(6){
+      transform: rotate(150deg);
+    }
+
+    .hour-marks > span:nth-child(7){
+      transform: rotate(180deg);
+    }
+
+    .hour-marks > span:nth-child(8){
+      transform: rotate(210deg);
+    }
+
+    .hour-marks > span:nth-child(9){
+      transform: rotate(240deg);
+    }
+
+    .hour-marks > span:nth-child(10){
+      transform: rotate(270deg);
+    }
+
+    .hour-marks > span:nth-child(11){
+      transform: rotate(300deg);
+    }
+
+    .hour-marks > span:nth-child(12){
+      transform: rotate(330deg);
+    }
+
+    
 
   </style>
 
